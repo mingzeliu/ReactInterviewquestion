@@ -16,6 +16,27 @@ body {
 }
 
 .container {
-  background-color: #3399ff;
+  background-color: #0080ff;
   width: 550px;
+  max-width: 100%;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 0.5px solid #f0f0f0;
+  background-color: #0080ff;
+  display: block;
 }
