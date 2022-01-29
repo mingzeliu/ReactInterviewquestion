@@ -45,11 +45,47 @@ body {
 }
 
 .form input[type="date"] {
-  width: 200px;
-  height: 46px;
+  width: 195px;
+  height: 26px;
   background-color: #1a75ff;
   border: 0.5px solid white;
 }
+
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+} */
+
+input[type="date"] {
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f073";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 6px;
+  color: white;
+}
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<input type="date">
 
 input {
   color: white;
